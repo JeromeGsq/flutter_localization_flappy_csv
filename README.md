@@ -137,7 +137,7 @@ Text(I18n.of(context).hello),
 // Swap locale at runtime
 void _swapLanguage() {
   setState(() {
-    I18n.load(Locale("fr", "FR"));
+    I18n.load(Locale("fr", ""));
   });
 }
 ```
