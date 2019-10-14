@@ -147,7 +147,7 @@ Pro/Cons
 **Pros:**
 - Classic CSV file format
 - Support comma if you place string between quotation mark
-- You can export CSV files from common software like Google Sheets or Excel
+- Non-developer can edit CSV files from common software like Google Sheets or Excel
 
 **Cons:** 
 - Doesn't support multiple language/country configurations (ex: `en-GB` and `en-US`)
