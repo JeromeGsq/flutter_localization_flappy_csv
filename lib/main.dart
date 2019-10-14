@@ -5,7 +5,7 @@ import 'i18n/i18n.dart';
 
 void main() => runApp(MyApp());
 
-// Flappy don't support country. meh
+// Flappy doesn't support country. meh
 final supportedLocales = [
   const Locale('en', ''),
   const Locale('es', ''),

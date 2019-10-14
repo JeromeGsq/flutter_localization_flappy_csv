@@ -7,36 +7,39 @@ import 'package:flutter/material.dart';
 class I18n {
   String get title => _getText("title");
 
-  String get hello => _getText("hello");
+String get hello => _getText("hello");
+
+
 
   I18n(Locale locale) {
     this._locale = locale;
-    _localizedValues = null;
+     _localizedValues = null;
   }
 
   Locale _locale;
 
   static Map<String, String> _localizedValues;
 
-  static Map<String, String> _enValues = {
-    "title": "Hello world App from US",
-    "hello": "Hello",
-  };
-
-  static Map<String, String> _esValues = {
-    "title": "Hola from ES",
-    "hello": "Hola",
-  };
-
-  static Map<String, String> _frValues = {
-    "title": "Bonjour depuis FR",
-    "hello": "Bonjour",
-  };
-  static Map<String, Map<String, String>> _allValues = {
-    "en": _enValues,
-    "es": _esValues,
-    "fr": _frValues,
-  };
+        
+static Map<String, String> _enValues = {
+              "title": "Hello world App from US",
+                "hello": "Hello",
+        };
+      
+static Map<String, String> _esValues = {
+              "title": "Hola from ES",
+                "hello": "Hola amigo",
+        };
+      
+static Map<String, String> _frValues = {
+              "title": "Bonjour depuis FR",
+                "hello": "Bonjour",
+        };
+    static Map<String, Map<String, String>> _allValues = {
+            "en": _enValues,
+              "es": _esValues,
+              "fr": _frValues,
+      };
 
   static I18n of(BuildContext context) {
     return Localizations.of<I18n>(context, I18n);
@@ -59,7 +62,7 @@ class I18nDelegate extends LocalizationsDelegate<I18n> {
   const I18nDelegate();
 
   @override
-  bool isSupported(Locale locale) => ['en', 'es', 'fr'].contains(locale.languageCode);
+      bool isSupported(Locale locale) => ['en', 'es', 'fr'].contains(locale.languageCode);
 
   @override
   Future<I18n> load(Locale locale) => I18n.load(locale);
@@ -67,3 +70,4 @@ class I18nDelegate extends LocalizationsDelegate<I18n> {
   @override
   bool shouldReload(I18nDelegate old) => false;
 }
+
