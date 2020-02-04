@@ -1,3 +1,4 @@
-keys,en,es,fr
-title,Hello world App from US,Hola from ES,Bonjour depuis FR
-hello,Hello,"Hola amigo",Bonjour
+keys,en_GB,en_US,es_ES,fr_FR,de
+title,Hello world App from GB,Hello world App from US,Hola from ES,Bonjour depuis FR, Hallo DE
+hello,Hello,Hello,"Hola amigo",Bonjour, Hallo
+description,Nice to meet you %name$s,Nice to meet you %name$s,Encantado de conocerte %name$s,Ravi de vous rencontrer %name$s,"Schön, Sie kennenzulernen %name$s"

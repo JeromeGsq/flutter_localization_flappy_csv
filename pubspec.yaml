@@ -12,7 +12,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_localizations:
     sdk: flutter
-  flappy_translator:
+  flappy_translator: ^1.2.2
 
 dev_dependencies:
   flutter_test:
