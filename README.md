@@ -1,4 +1,4 @@
-Flutter easy localization
+Flutter Flappy localization
 ===============
 
 **flappy_translator package**: https://pub.dev/packages/flappy_translator
@@ -98,7 +98,7 @@ Configure supported locales in `supportedLocales`
 ```dart
 // You need to configure supported locales here
 // You need to configure Info.plist too
-// Flappy doesn't support country. meh
+// Flappy support country too !
 final supportedLocales = [
   Locale("en", ""),
   Locale("en", ""),
@@ -153,7 +153,7 @@ Pro/Cons
 - Classic CSV file format
 - Support comma if you place string between quotation mark
 - Non-developer can edit CSV files from common software like Google Sheets or Excel
+- Support multiple language/country configurations (ex: `en-GB` and `en-US`)
 
 **Cons:** 
-- Doesn't support multiple language/country configurations (ex: `en-GB` and `en-US`)
 - You need to execute command lines to regenerate files
